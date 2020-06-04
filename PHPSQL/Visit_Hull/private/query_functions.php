@@ -217,7 +217,7 @@ function insert_page($page)
     // for insert statements, the result is true/false, but it will still send the data
     if ($result) {
         return true;
-        // this all looks a bit fucked but the functions are helping you out alot
+        // this all looks a bit weird but the functions are helping you out alot
     } else {
         // mysqli_error just asks for what the error was from the data base, just general errors
         echo mysqli_error($db);
@@ -347,7 +347,7 @@ function insert_admin($admin){
     $sql .= "'" . $hashed_password . "'";
     $sql .= ")";
     // if($db === true){
-    //     echo "poo";
+    
     // 
     // echo $sql;
     $result = mysqli_query($db, $sql);
